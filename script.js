@@ -8,7 +8,7 @@ let apiKey = 'c9cc196201c54d3da8bc5c4487f380f8';
 // Create an AJAX GET Request
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`, true);
 
 xhr.onprogress = function() {
     // console.log('Work under progress');
@@ -54,7 +54,7 @@ let newsSportsAccordion = document.getElementById('newsSportsAccordion');
 let category1 = 'sports';
 
 const xhr1 = new XMLHttpRequest();
-xhr1.open('GET', `http://newsapi.org/v2/top-headlines?country=in&category=${category1}&apiKey=${apiKey}`, true);
+xhr1.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=${category1}&apiKey=${apiKey}`, true);
 xhr1.onprogress = function() {}
 xhr1.onload = function() {
     if (this.status == 200) {
@@ -92,7 +92,7 @@ let newsScienceAccordion = document.getElementById('newsScienceAccordion');
 let category2 = 'science';
 
 const xhr2 = new XMLHttpRequest();
-xhr2.open('GET', `http://newsapi.org/v2/top-headlines?country=in&category=${category2}&apiKey=${apiKey}`, true);
+xhr2.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=${category2}&apiKey=${apiKey}`, true);
 xhr2.onprogress = function() {}
 xhr2.onload = function() {
     if (this.status == 200) {
